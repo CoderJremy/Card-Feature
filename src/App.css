@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,700&display=swap');
+
+:root {
+  --black: hsl(0, 0%, 8%);
+  --white: hsl(0, 0%, 98%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-image: radial-gradient(circle, #fff7e3, #e5eed9, #cbe3d5, #b5d8d5, #a8cad4, #aac9d6, #adc9d8, #b0c8da, #bad6e3, #c7e4eb, #d6f2f3, #e6fffc);
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-width: 400px;
+  min-height: 620px;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card > .text {
+  padding: 1em;
+}
+
+.card p {
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+.categories-title {
+  display: inline;
+  color: var(--white);
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.title h2 {
+  margin-top: 0.345em;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.25em 1em;
+  background: var(--black);
+  color: var(--white);
+  font-size: 1.15em;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.25s ease-in-out;
+}
+
+#next-btn {
+  color: var(--black);
+  background: var(--white);
+}
+
+#previous-btn {
+  margin-left: 0.5em;
+}
+
+.controls {
+  margin-top: 1em;
+}
